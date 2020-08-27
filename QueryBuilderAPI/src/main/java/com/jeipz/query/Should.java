@@ -1,12 +1,10 @@
 package com.jeipz.query;
 
-public class Must {
+public class Should {
 
 	Match match;
-	Bool bool;
 	
-	public Must(String type, String value) {
-		bool = new Bool();
+	public Should(String type, String value) {
 		this.match = new Match(type, value);
 	}
 
@@ -16,14 +14,6 @@ public class Must {
 
 	public void setMatch(Match match) {
 		this.match = match;
-	}
-
-	public Bool getBool() {
-		return bool;
-	}
-
-	public void setBool(Bool bool) {
-		this.bool = bool;
 	}
 	
 }

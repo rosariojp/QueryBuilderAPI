@@ -5,18 +5,19 @@ import java.util.Map;
 
 public class Match {
 
-	Map<String, String> match = new HashMap<String, String>();
+	Map<String, String> pair;
 	
-	public Match(String key, String value) {
-		match.put(key, value);
+	public Match(String type, String value) {
+		pair = new HashMap<String, String>();
+		pair.put(type, value);
 	}
 
 	public Map<String, String> getMatch() {
-		return match;
+		return pair;
 	}
 
-	public void setMatch(Map<String, String> match) {
-		this.match = match;
+	public void setMatch(Map<String, String> pair) {
+		this.pair = pair;
 	}
 
 }
