@@ -9,12 +9,10 @@ import com.jeipz.builder.QueryBuilder;
 public class Test {
 
 	public static void main(String[] args) {
-		
 		QueryBuilder builder = new QueryBuilder();
 		builder.bool().mustMatch("item", "Milk").mustMatch("item_type", "Dairy");
 		builder.bool().shouldMatch("product_location", "New Mexico").shouldMatch("warehouse_number", "37");
 		System.out.println(convertObjectToJSONString(builder));
-		
 	}
 	
 	public static String convertObjectToJSONString(Object object) {
@@ -25,9 +23,9 @@ public class Test {
 		try {
 			objectToJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(object);
 		} catch (JsonProcessingException e) {
-			e.printStackTrace();
+			System.out.println("Error cause: " + e.getCause());
+			System.out.println("Error message: " + e.getMessage());
 		}
-		
 		return objectToJson;
 	}
 	
