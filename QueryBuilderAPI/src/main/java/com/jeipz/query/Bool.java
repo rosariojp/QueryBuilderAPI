@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Bool {
 
-	List<Match> must;
-	List<Match> should;
+	private List<Match> must;
+	private List<Match> should;
 	
 	public Bool() {
 		must = new ArrayList<Match>();

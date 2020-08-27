@@ -2,7 +2,7 @@ package com.jeipz.query;
 
 public class Query {
 
-	Bool bool;
+	private Bool bool;
 
 	public Query() {
 		bool = new Bool();

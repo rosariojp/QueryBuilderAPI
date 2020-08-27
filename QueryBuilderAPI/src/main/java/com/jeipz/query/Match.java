@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Match {
 
-	Map<String, String> pair;
+	private Map<String, String> pair;
 	
 	public Match(String name, String value) {
 		pair = new HashMap<String, String>();

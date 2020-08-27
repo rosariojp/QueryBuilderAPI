@@ -5,7 +5,7 @@ import com.jeipz.query.Query;
 
 public class QueryBuilder {
 
-	Query query;
+	private Query query;
 	
 	public QueryBuilder() {
 		query = new Query();

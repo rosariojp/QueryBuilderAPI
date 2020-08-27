@@ -2,7 +2,7 @@ package com.jeipz.query;
 
 public class Should {
 
-	Match match;
+	private Match match;
 	
 	public Should(String name, String value) {
 		this.match = new Match(name, value);
