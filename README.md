@@ -28,5 +28,7 @@ builder.bool().shouldMatch("lot_number", 307).bool().mustMatch("expiry_date", "J
 
 ### Rules:
 * Can have a single must or should section inside a bool section
-* Inside each one of musts or shoulds can have nested bool sections
 * Can have any attribute name and value for match section
+* Inside each one of musts or shoulds can have nested bool sections
+
+More information can be found at: https://www.jobreadyprogrammer.com/blog/5893/oop-api-assignment
