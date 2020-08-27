@@ -5,9 +5,9 @@ public class Must {
 	Match match;
 	Bool bool;
 	
-	public Must(String type, String value) {
+	public Must(String name, String value) {
 		bool = new Bool();
-		this.match = new Match(type, value);
+		this.match = new Match(name, value);
 	}
 
 	public Match getMatch() {

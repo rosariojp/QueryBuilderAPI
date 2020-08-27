@@ -4,8 +4,8 @@ public class Should {
 
 	Match match;
 	
-	public Should(String type, String value) {
-		this.match = new Match(type, value);
+	public Should(String name, String value) {
+		this.match = new Match(name, value);
 	}
 
 	public Match getMatch() {

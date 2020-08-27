@@ -7,9 +7,9 @@ public class Match {
 
 	Map<String, String> pair;
 	
-	public Match(String type, String value) {
+	public Match(String name, String value) {
 		pair = new HashMap<String, String>();
-		pair.put(type, value);
+		pair.put(name, value);
 	}
 
 	public Map<String, String> getMatch() {

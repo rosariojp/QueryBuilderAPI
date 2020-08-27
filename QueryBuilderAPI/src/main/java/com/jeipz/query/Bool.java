@@ -13,13 +13,13 @@ public class Bool {
 		should = new ArrayList<Match>();
 	}
 	
-	public Bool mustMatch(String type, String value) {
-		must.add(new Must(type, value).getMatch());
+	public Bool mustMatch(String name, String value) {
+		must.add(new Must(name, value).getMatch());
 		return this;
 	}
 	
-	public Bool shouldMatch(String type, String value) {
-		should.add(new Should(type, value).getMatch());
+	public Bool shouldMatch(String name, String value) {
+		should.add(new Should(name, value).getMatch());
 		return this;
 	}
 
