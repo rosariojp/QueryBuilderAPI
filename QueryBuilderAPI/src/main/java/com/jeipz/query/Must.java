@@ -1,19 +1,16 @@
 package com.jeipz.query;
 
-public class Must {
+@SuppressWarnings("rawtypes")
+public class Must<A, B> {
 
 	private Match match;
-	
-	public Must(String name, String value) {
-		this.match = new Match(name, value);
+
+	public Must(A name, B value) {
+		this.match = new Match<A, B>(name, value);
 	}
 
 	public Match getMatch() {
 		return match;
 	}
 
-	public void setMatch(Match match) {
-		this.match = match;
-	}
-	
 }

@@ -3,21 +3,17 @@ package com.jeipz.query;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Match {
+public class Match <A, B> {
 
-	private Map<String, String> pair;
+	private Map<A, B> pair;
 	
-	public Match(String name, String value) {
-		pair = new HashMap<String, String>();
+	public Match(A name, B value) {
+		pair = new HashMap<A, B>();
 		pair.put(name, value);
 	}
 
-	public Map<String, String> getMatch() {
+	public Map<A, B> getMatch() {
 		return pair;
-	}
-
-	public void setMatch(Map<String, String> pair) {
-		this.pair = pair;
 	}
 
 }

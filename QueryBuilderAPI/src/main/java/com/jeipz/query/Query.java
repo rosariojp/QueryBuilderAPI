@@ -1,5 +1,6 @@
 package com.jeipz.query;
 
+@SuppressWarnings("rawtypes")
 public class Query {
 
 	private Bool bool;
@@ -10,10 +11,6 @@ public class Query {
 
 	public Bool getBool() {
 		return bool;
-	}
-
-	public void setBool(Bool bool) {
-		this.bool = bool;
 	}
 
 }

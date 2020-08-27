@@ -3,6 +3,7 @@ package com.jeipz.builder;
 import com.jeipz.query.Bool;
 import com.jeipz.query.Query;
 
+@SuppressWarnings("rawtypes")
 public class QueryBuilder {
 
 	private Query query;
@@ -17,10 +18,6 @@ public class QueryBuilder {
 
 	public Query getQuery() {
 		return query;
-	}
-
-	public void setQuery(Query query) {
-		this.query = query;
 	}
 	
 }

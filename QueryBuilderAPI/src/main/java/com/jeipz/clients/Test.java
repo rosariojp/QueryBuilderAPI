@@ -11,7 +11,7 @@ public class Test {
 	public static void main(String[] args) {
 		QueryBuilder builder = new QueryBuilder();
 		builder.bool().mustMatch("item", "Milk").mustMatch("item_type", "Dairy");
-		builder.bool().shouldMatch("product_location", "New Mexico").shouldMatch("warehouse_number", "37");
+		builder.bool().shouldMatch("product_location", "New Mexico").shouldMatch("warehouse_number", 37);
 		System.out.println(convertObjectToJSONString(builder));
 	}
 	
